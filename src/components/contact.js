@@ -19,7 +19,7 @@ class Contact extends Component {
         if(this.state.topic == '' | this.state.url == '' | this.state.subject == ''){
             alert("Please fill all fields.")
         }else{
-            fetch('https://formsubmit.co/ajax/c1e4b2ec6aff10bba2bedcf72557a8cc', {
+            fetch('https://formsubmit.co/ajax/ahmed0saber33@gmail.com', {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify(this.state)
