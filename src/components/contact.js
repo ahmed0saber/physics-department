@@ -1,11 +1,12 @@
 import React, { Component } from "react";
 import { NavLink } from "react-router-dom";
+import { useParams } from "react-router-dom";
 
-class Contact extends Component {
+class Form extends Component {
     state = {
         topic: '',
         url: '',
-        subject: ''
+        subject: this.props.back.id
     }
 
     handleChange = (e) => {
@@ -35,10 +36,11 @@ class Contact extends Component {
     }
 
     render(){
+        const back = this.props.back.id
         return (
             <>
                 <div className="back">
-                    <NavLink to="/">Back</NavLink>
+                    <NavLink to={`/${back}`}>Back</NavLink>
                 </div>
                 <div className="form">
                     <p>Add New Topic</p>
@@ -50,6 +52,14 @@ class Contact extends Component {
             </>
         )
     }
+}
+
+const Contact = (props) => {
+    const param = useParams()
+
+    return (
+        <Form back={param}/>
+    )
 }
 
 export default Contact;

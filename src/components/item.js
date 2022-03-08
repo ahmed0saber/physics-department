@@ -15,6 +15,7 @@ class Item extends Component {
                     </a> : <NavLink className="item" key={item.id} to={`/${item.url}`}>
                         <div>
                             <p>{item.id}&#41; {item.topic}</p>
+                            <span>{item.content.length}</span>
                         </div>
                     </NavLink> }
                 </>

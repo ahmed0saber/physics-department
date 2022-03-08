@@ -1,5 +1,11 @@
 @import url('https://fonts.googleapis.com/css?family=Audiowide|Sofia');
-
+:root{
+  --pri: #ffd100;
+  --back: #202020;
+  --nav: #333533;
+  --input: #f7f7f7;
+  --placeholder: #a9a9a9;
+}
 *{
   padding: 0;
   margin: 0;
@@ -7,19 +13,19 @@
   box-sizing: border-box;
 }
 body{
-  background-color: #333533;
+  background-color: var(--nav);
 }
 #root{
   width: 100%;
-  background-color: #202020;
+  background-color: var(--back);
 }
 h1, h3{
-  color: #ffd100;
+  color: var(--pri);
   margin: 20px 2px;
 }
 h2{
-  background-color: #333533;
-  color: #ffd100;
+  background-color: var(--nav);
+  color: var(--pri);
   padding: 12px;
   font-family: "Sofia", sans-serif;
   font-size: 24px;
@@ -38,21 +44,36 @@ h2{
   padding: 14px;
   text-decoration: none;
   margin: 8px 0;
-  color: #202020;
+  color: var(--back);
   font-size: 20px;
-  background-color: #ffd100;
+  background-color: var(--pri);
+}
+.item div{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.item div span{
+  width: 34px;
+  height: 34px;
+  background-color: var(--nav);
+  color: var(--pri);
+  display: grid;
+  place-items: center;
+  margin: 0 0 0 2px;
 }
 footer{
   text-align: center;
   padding: 12px 2px;
-  background-color: #333533;
+  background-color: var(--nav);
   margin: 8px 0 0 0;
 }
 footer p{
-  color: #ffd100;
+  color: var(--pri);
 }
 footer a{
-  color: #ffd100;
+  color: var(--pri);
   text-decoration: none;
 }
 .back{
@@ -62,8 +83,8 @@ footer a{
   justify-content: space-between;
 }
 .back a{
-  background-color: #ffd100;
-  color: #202020;
+  background-color: var(--pri);
+  color: var(--back);
   text-decoration: none;
   padding: 8px 24px;
   float: left;
@@ -82,11 +103,11 @@ footer a{
 }
 .form *{
   display: block;
-  width: 100%;
-  margin: 8px 0px;
+  width: 98%;
+  margin: 8px auto;
 }
 .form p{
-  color: #ffd100;
+  color: var(--pri);
   text-align: center;
   font-size: 20px;
 }
@@ -96,18 +117,42 @@ footer a{
   font-size: 16px;
   border: none;
   outline: none;
-  background-color: #333533;
-  color: #f7f7f7;
+  background-color: var(--nav);
+  color: var(--input);
 }
 .form input::placeholder{
-  color: #a9a9a9;
+  color: var(--placeholder);
 }
 .form button{
   padding: 12px 2px;
   font-size: 18px;
-  background-color: #ffd100;
-  color: #202020;
+  background-color: var(--pri);
+  color: var(--back);
   border: none;
   outline: none;
   cursor: pointer;
+}
+button.fa.floatingbtn{
+  color: var(--back);
+  background-color: var(--placeholder);
+  width: 54px;
+  height: 54px;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  font-size: 22px;
+  position: fixed;
+  bottom: 100px;
+  right: 0px;
+  transform: translateY(-50%) translateX(-50%);
+  -webkit-transform: translateY(-50%) translateX(-50%);
+  -moz-transform: translateY(-50%) translateX(-50%);
+  -ms-transform: translateY(-50%) translateX(-50%);
+  -o-transform: translateY(-50%) translateX(-50%);
+  opacity: 0.8;
+  border: none;
 }

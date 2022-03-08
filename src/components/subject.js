@@ -7,64 +7,7 @@ import Item from './item'
 
 class SubjectPage extends Component {
     state = {
-        subjects: [
-            {
-                id:1, topic:'Practical Physics', url:"practical",
-                content: [
-                    {id:1, topic: 'First Lecture', url: "https://www.google.com/"},
-                    {id:2, topic: 'Second Lecture', url: "https://www.google.com/"}
-                ]
-            },
-            {
-                id:2, topic:'Solid State Physics 2', url:"solid-state",
-                content: [
-                    {id:1, topic: 'First Lecture', url: "https://www.google.com/"},
-                    {id:2, topic: 'Second Lecture', url: "https://www.google.com/"}
-                ]
-            },
-            {
-                id:3, topic:'Nuclear Physics 3', url:"nuclear",
-                content: [
-                    {id:1, topic: 'First Lecture', url: "https://www.google.com/"},
-                    {id:2, topic: 'Second Lecture', url: "https://www.google.com/"}
-                ]
-            },
-            {
-                id:4, topic:'Atomic Physics 2', url:"atomic",
-                content: [
-                    {id:1, topic: 'First Lecture', url: "https://www.google.com/"},
-                    {id:2, topic: 'Second Lecture', url: "https://www.google.com/"}
-                ]
-            },
-            {
-                id:5, topic:'Nuclear Reactor Physics', url:"nuclear-reactor",
-                content: [
-                    {id:1, topic: 'First Lecture', url: "https://www.google.com/"},
-                    {id:2, topic: 'Second Lecture', url: "https://www.google.com/"}
-                ]
-            },
-            {
-                id:6, topic:'Molecular Spectra', url:"molecular-spectra",
-                content: [
-                    {id:1, topic: 'First Lecture', url: "https://www.google.com/"},
-                    {id:2, topic: 'Second Lecture', url: "https://www.google.com/"}
-                ]
-            },
-            {
-                id:7, topic:'Electrodynamics', url:"electrodynamics",
-                content: [
-                    {id:1, topic: 'First Lecture', url: "https://www.google.com/"},
-                    {id:2, topic: 'Second Lecture', url: "https://www.google.com/"}
-                ]
-            },
-            {
-                id:8, topic:'Programming 3', url:"programming",
-                content: [
-                    {id:1, topic: 'First Lecture', url: "https://www.google.com/"},
-                    {id:2, topic: 'Second Lecture', url: "https://www.google.com/"}
-                ]
-            }
-        ],
+        subjects: this.props.data,
         subject: {},
         found: false
     }
@@ -87,7 +30,7 @@ class SubjectPage extends Component {
             { this.state.found ? <>
                 <div className="back">
                     <NavLink to="/">Back</NavLink>
-                    <NavLink to="/contact">Add</NavLink>
+                    <NavLink to={`/contact/${this.state.subject.url}`}>Add</NavLink>
                 </div>
                 <h3>{this.state.subject.id}&#41; {this.state.subject.topic}</h3>
                 <Item data={this.state.subject.content} sub={true}/>
@@ -99,10 +42,10 @@ class SubjectPage extends Component {
 
 const Subject = (props) => {
     const param = useParams()
-    console.log(param)
+    const data = props.data
 
     return (
-        <SubjectPage params={param}/>
+        <SubjectPage params={param} data={data}/>
     )
 }
 
