@@ -12,66 +12,7 @@ class App extends Component {
     super(props);
     let x = localStorage.getItem("theme") ? parseInt(localStorage.getItem("theme")) : 0
     this.state = {
-      items: [
-        {
-          id:1, topic:'Practical Physics', url:"practical",
-          content: [
-              {id:1, topic: 'First Lecture', url: "https://www.google.com/"},
-              {id:2, topic: 'Second Lecture', url: "https://www.google.com/"},
-              {id:3, topic: 'Third Lecture', url: "https://www.google.com/"},
-              {id:4, topic: 'Forth Lecture', url: "https://www.google.com/"}
-          ]
-        },
-        {
-            id:2, topic:'Solid State Physics 2', url:"solid-state",
-            content: [
-                {id:1, topic: 'First Lecture', url: "https://www.google.com/"},
-                {id:2, topic: 'Second Lecture', url: "https://www.google.com/"}
-            ]
-        },
-        {
-            id:3, topic:'Nuclear Physics 3', url:"nuclear",
-            content: [
-                {id:1, topic: 'First Lecture', url: "https://www.google.com/"},
-                {id:2, topic: 'Second Lecture', url: "https://www.google.com/"}
-            ]
-        },
-        {
-            id:4, topic:'Atomic Physics 2', url:"atomic",
-            content: [
-                {id:1, topic: 'First Lecture', url: "https://www.google.com/"},
-                {id:2, topic: 'Second Lecture', url: "https://www.google.com/"}
-            ]
-        },
-        {
-            id:5, topic:'Nuclear Reactor Physics', url:"nuclear-reactor",
-            content: [
-                {id:1, topic: 'First Lecture', url: "https://www.google.com/"},
-                {id:2, topic: 'Second Lecture', url: "https://www.google.com/"}
-            ]
-        },
-        {
-            id:6, topic:'Molecular Spectra', url:"molecular-spectra",
-            content: [
-                {id:1, topic: 'First Lecture', url: "https://www.google.com/"},
-                {id:2, topic: 'Second Lecture', url: "https://www.google.com/"}
-            ]
-        },
-        {
-            id:7, topic:'Electrodynamics', url:"electrodynamics",
-            content: [
-                {id:1, topic: 'First Lecture', url: "https://www.google.com/"},
-                {id:2, topic: 'Second Lecture', url: "https://www.google.com/"}
-            ]
-        },
-        {
-            id:8, topic:'Programming 3', url:"programming",
-            content: [
-                {id:1, topic: 'First Lecture', url: "https://www.google.com/"},
-                {id:2, topic: 'Second Lecture', url: "https://www.google.com/"}
-            ]
-        }
-      ],
+      items: [],
       theme: x,
       themes: [
         {
@@ -124,6 +65,17 @@ class App extends Component {
     document.querySelector(':root').style.setProperty('--nav',this.state.themes[this.state.theme].nav);
     document.querySelector(':root').style.setProperty('--input',this.state.themes[this.state.theme].input);
     document.querySelector(':root').style.setProperty('--placeholder',this.state.themes[this.state.theme].placeholder);
+  }
+
+  componentDidMount(){
+    fetch("https://ahmed0saber.github.io/physics-department/physics.json")
+      .then(response => response.json())
+      .then(data => {
+        this.setState({
+          items: data
+        })
+      });
+      document.getElementsByClassName("floatingbtn")[0].click()
   }
 
   changeTheme = () => {
