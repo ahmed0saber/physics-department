@@ -2,59 +2,54 @@
     {
         "id":1, "topic":"Practical Physics", "url":"practical",
         "content": [
-            {"id":1, "topic": "First Lecture", "url": "https://www.google.com/"},
-            {"id":2, "topic": "Second Lecture", "url": "https://www.google.com/"},
-            {"id":3, "topic": "Third Lecture", "url": "https://www.google.com/"},
-            {"id":4, "topic": "Forth Lecture", "url": "https://www.google.com/"}
+            {"id":1, "topic": "There is nothing here.", "url": "https://www.google.com/"}
         ]
     },
     {
         "id":2, "topic":"Solid State Physics 2", "url":"solid-state",
         "content": [
-            {"id":1, "topic": "First Lecture", "url": "https://www.google.com/"},
-            {"id":2, "topic": "Second Lecture", "url": "https://www.google.com/"}
+            {"id":1, "topic": "There is nothing here.", "url": "https://www.google.com/"}
         ]
     },
     {
         "id":3, "topic":"Nuclear Physics 3", "url":"nuclear",
         "content": [
-            {"id":1, "topic": "First Lecture", "url": "https://www.google.com/"},
-            {"id":2, "topic": "Second Lecture", "url": "https://www.google.com/"}
+            {"id":1, "topic": "First lecture written by Ali El Sha3bany.", "url": "https://drive.google.com/file/d/1misj_u5YJvwHRrczAycdYE7wF78c2ejO/view?usp=sharing"}
         ]
     },
     {
         "id":4, "topic":"Atomic Physics 2", "url":"atomic",
         "content": [
-            {"id":1, "topic": "First Lecture", "url": "https://www.google.com/"},
-            {"id":2, "topic": "Second Lecture", "url": "https://www.google.com/"}
+            {"id":1, "topic": "First Lecture", "url": "https://docs.google.com/presentation/d/10uCqZIg-9ZA4kGAPGPHJ4v6FeyQ56WJF/edit?usp=sharing&ouid=106884812803554546505&rtpof=true&sd=true"},
+            {"id":2, "topic": "Second Lecture", "url": "https://docs.google.com/presentation/d/1LW48GduMtq1HpqpgJlBhDxkqNun-2XhH/edit?usp=sharing&ouid=106884812803554546505&rtpof=true&sd=true"},
+            {"id":2, "topic": "First lecture written by Ali El Sha3bany.", "url": "https://drive.google.com/file/d/15AOsq5iBsZfxJW5ewcyYxOuiixgVkVZZ/view?usp=sharing"}
         ]
     },
     {
         "id":5, "topic":"Nuclear Reactor Physics", "url":"nuclear-reactor",
         "content": [
-            {"id":1, "topic": "First Lecture", "url": "https://www.google.com/"},
-            {"id":2, "topic": "Second Lecture", "url": "https://www.google.com/"}
+            {"id":1, "topic": "First PDF", "url": "https://drive.google.com/file/d/1xm0FBX6Bq0ZP_uvNuq-jFVYEveqJVq6F/view"},
+            {"id":2, "topic": "Second PDF", "url": "https://drive.google.com/file/d/1SrwDwcI6QgNl_1-id8jqnH_MlvvC-Wjm/view"},
+            {"id":2, "topic": "Third PDF", "url": "https://drive.google.com/file/d/1-ETJQKqovqZ7Rov4ugZ8mFIF-AusBZqc/view"},
+            {"id":1, "topic": "First lecture written by Ali El Sha3bany.", "url": "https://drive.google.com/file/d/1W7MJ4ocJ0GQBjnK8_3G4rJ5A9XUstSWY/view?usp=sharing"}
         ]
     },
     {
         "id":6, "topic":"Molecular Spectra", "url":"molecular-spectra",
         "content": [
-            {"id":1, "topic": "First Lecture", "url": "https://www.google.com/"},
-            {"id":2, "topic": "Second Lecture", "url": "https://www.google.com/"}
+            {"id":1, "topic": "There is nothing here.", "url": "https://www.google.com/"}
         ]
     },
     {
         "id":7, "topic":"Electrodynamics", "url":"electrodynamics",
         "content": [
-            {"id":1, "topic": "First Lecture", "url": "https://www.google.com/"},
-            {"id":2, "topic": "Second Lecture", "url": "https://www.google.com/"}
+            {"id":1, "topic": "There is nothing here.", "url": "https://www.google.com/"}
         ]
     },
     {
         "id":8, "topic":"Programming 3", "url":"programming",
         "content": [
-            {"id":1, "topic": "First Lecture", "url": "https://www.google.com/"},
-            {"id":2, "topic": "Second Lecture", "url": "https://www.google.com/"}
+            {"id":1, "topic": "First lecture written by Ali El Sha3bany.", "url": "https://drive.google.com/file/d/1SP3lWXtIEh0Wzov5AoiSdn-goHXa2cNF/view?usp=sharing"}
         ]
     }
 ]
