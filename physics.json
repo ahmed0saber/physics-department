@@ -2,13 +2,13 @@
     {
         "id":1, "topic":"Practical Physics", "url":"practical",
         "content": [
-            {"id":1, "topic": ".للاسف مفيش حاجة هنا", "url": "https://www.google.com/"}
+            {"id":1, "topic": "للاسف مفيش حاجة هنا", "url": "https://www.google.com/"}
         ]
     },
     {
         "id":2, "topic":"Solid State Physics 2", "url":"solid-state",
         "content": [
-            {"id":1, "topic": "There is nothing here.", "url": "https://www.google.com/"}
+            {"id":1, "topic": "مفيش حاجة هنا و متقوليش رايح تنام", "url": "https://www.google.com/"}
         ]
     },
     {
@@ -37,13 +37,13 @@
     {
         "id":6, "topic":"Molecular Spectra", "url":"molecular-spectra",
         "content": [
-            {"id":1, "topic": "There is nothing here.", "url": "https://www.google.com/"}
+            {"id":1, "topic": "مستغرب ليه ؟ مفيش حاجة برضو", "url": "https://www.google.com/"}
         ]
     },
     {
         "id":7, "topic":"Electrodynamics", "url":"electrodynamics",
         "content": [
-            {"id":1, "topic": "There is nothing here.", "url": "https://www.google.com/"}
+            {"id":1, "topic": "طبعا انت كنت داخل عشان تذاكر المادة دى ف يؤسفنى اقولك ان ملهاش حاجة هنا", "url": "https://www.google.com/"}
         ]
     },
     {
