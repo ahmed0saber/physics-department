@@ -8,7 +8,7 @@
 *{
   padding: 0;
   margin: 0;
-  font-family: "Audiowide", monospace;
+  font-family: "Audiowide", "Cairo", monospace;
   box-sizing: border-box;
 }
 body{
@@ -52,6 +52,9 @@ h2{
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+}
+.item div p{
+  width: 100%;
 }
 .item div span{
   width: 34px;
