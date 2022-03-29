@@ -7,7 +7,7 @@ class Item extends Component {
         const sub = this.props.sub
         const oneItem = items.map((item, index) => {
             return(
-                <>
+                <span className="key" key={index}>
                     { sub ? <a className="item" key={index} href={item.url} target="_blank" rel="noreferrer">
                         <div>
                             <p dir="auto">{index+1}&#41; {item.topic}</p>
@@ -18,13 +18,13 @@ class Item extends Component {
                             <span>{item.content.length}</span>
                         </div>
                     </NavLink> }
-                </>
+                </span>
             )
         })
         return (
-            <>
+            <div className="key" data-aos="fade-right">
                 {oneItem}
-            </>
+            </div>
         )
     }
 }

@@ -36,9 +36,9 @@ class Form extends Component {
     }
 
     render(){
-        const back = this.props.back.id
+        const back = this.props.back.id ? this.props.back.id : ''
         return (
-            <>
+            <div className="key" data-aos="fade-right">
                 <div className="back">
                     <NavLink to={`/${back}`}>Back</NavLink>
                 </div>
@@ -49,12 +49,12 @@ class Form extends Component {
                     <input value={this.state.subject} onChange={this.handleChange} type="text" id="subject" placeholder="Enter the subject, ex: Programming"  autoComplete="off"/>
                     <button onClick={this.formSubmit}>Send</button>
                 </div>
-            </>
+            </div>
         )
     }
 }
 
-const Contact = (props) => {
+const Contact = () => {
     const param = useParams()
 
     return (

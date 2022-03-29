@@ -9,7 +9,7 @@ import './App.css'
 
 class App extends Component {
   constructor(props) {
-    super(props);
+    super(props)
     let x = localStorage.getItem("theme") ? parseInt(localStorage.getItem("theme")) : 0
     this.state = {
       items: [],
@@ -74,7 +74,7 @@ class App extends Component {
         this.setState({
           items: data
         })
-      });
+      })
       document.getElementsByClassName("floatingbtn")[0].click()
   }
 
@@ -84,12 +84,12 @@ class App extends Component {
     }else{
       this.setState({theme:this.state.theme+1})
     }
-    localStorage.setItem("theme", this.state.theme);
-    document.querySelector(':root').style.setProperty('--pri',this.state.themes[this.state.theme].pri);
-    document.querySelector(':root').style.setProperty('--back',this.state.themes[this.state.theme].back);
-    document.querySelector(':root').style.setProperty('--nav',this.state.themes[this.state.theme].nav);
-    document.querySelector(':root').style.setProperty('--input',this.state.themes[this.state.theme].input);
-    document.querySelector(':root').style.setProperty('--placeholder',this.state.themes[this.state.theme].placeholder);
+    localStorage.setItem("theme", this.state.theme)
+    document.querySelector(':root').style.setProperty('--pri',this.state.themes[this.state.theme].pri)
+    document.querySelector(':root').style.setProperty('--back',this.state.themes[this.state.theme].back)
+    document.querySelector(':root').style.setProperty('--nav',this.state.themes[this.state.theme].nav)
+    document.querySelector(':root').style.setProperty('--input',this.state.themes[this.state.theme].input)
+    document.querySelector(':root').style.setProperty('--placeholder',this.state.themes[this.state.theme].placeholder)
   }
   
   render() {
@@ -100,9 +100,9 @@ class App extends Component {
           <div className="container">
             <Routes>
               <Route path="/" element={<Item data={this.state.items}/>} />
+              <Route path="/:id" element={<Subject data={this.state.items}/>} />
               <Route path="/contact" element={<Contact/>} />
               <Route path="/contact/:id" element={<Contact data={this.state.items}/>} />
-              <Route path="/:id" element={<Subject data={this.state.items}/>} />
               <Route path="*" element={<NoPage/>} />
             </Routes>
           </div>
