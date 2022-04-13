@@ -2,7 +2,7 @@
     {
         "id":1, "topic":"Practical Physics", "url":"practical",
         "content": [
-            {"id":1, "topic": "للاسف مفيش حاجة هنا", "url": "https://www.google.com/"}
+            {"id":1, "topic": "ToGraph (origin lab alternative)", "url": "https://ahmed0saber.github.io/ToGraph/"}
         ]
     },
     {
@@ -60,7 +60,8 @@
         "content": [
             {"id":1, "topic": "First lecture written by Ali El Sha3bany.", "url": "https://drive.google.com/file/d/1SP3lWXtIEh0Wzov5AoiSdn-goHXa2cNF/view?usp=sharing"},
             {"id":2, "topic": "C++ tutorial on programiz.com", "url": "https://www.programiz.com/cpp-programming"},
-            {"id":3, "topic": "C++ tutorial on w3schools.com", "url": "https://www.w3schools.com/cpp/default.asp"}
+            {"id":3, "topic": "C++ tutorial on w3schools.com", "url": "https://www.w3schools.com/cpp/default.asp"},
+            {"id":4, "topic": "C++ Test", "url": "https://ahmed0saber.github.io/cpp-test/"}
         ]
     }
 ]
