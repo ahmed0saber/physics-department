@@ -46,7 +46,8 @@
         "id":6, "topic":"Molecular Spectra", "url":"molecular-spectra",
         "content": [
             {"id":1, "topic": "Lecture 2", "url": "https://docs.google.com/presentation/d/1Uinbmvct_Ng9W6OogpvxlLr8g7F14BuT/edit?usp=sharing&ouid=106884812803554546505&rtpof=true&sd=true"},
-            {"id":2, "topic": "Lecture 2+", "url": "https://docs.google.com/presentation/d/1v-8pdNJJvcKG1SetWJo1dSQB1bacNAfk/edit?usp=sharing&ouid=106884812803554546505&rtpof=true&sd=true"}
+            {"id":2, "topic": "Lecture 2+", "url": "https://docs.google.com/presentation/d/1v-8pdNJJvcKG1SetWJo1dSQB1bacNAfk/edit?usp=sharing&ouid=106884812803554546505&rtpof=true&sd=true"},
+            {"id":3, "topic": "Lecture 2++", "url": "https://docs.google.com/presentation/d/1STHyjXeyoCB06b3l538TnHm9TNcvMSeT/edit?usp=sharing&ouid=106884812803554546505&rtpof=true&sd=true"}
         ]
     },
     {
